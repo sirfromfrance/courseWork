@@ -1,0 +1,28 @@
+﻿<Window x:Class="corseWork.teacher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:corseWork"
+        mc:Ignorable="d"
+        Title="teacher" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.485,0.303">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="722*"/>
+            <ColumnDefinition Width="79*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="10,76,0,0" TextWrapping="Wrap" Text="Search for materials" VerticalAlignment="Top" Width="343" FontFamily="Georgia" FontSize="14"/>
+        <Button Content="SEARCH!" HorizontalAlignment="Left" Height="35" Margin="652,76,0,0" VerticalAlignment="Top" Width="90" FontFamily="Georgia" FontSize="14" Grid.ColumnSpan="2"/>
+        <Button Content="exit" HorizontalAlignment="Left" Height="35" Margin="366,366,0,0" VerticalAlignment="Top" Width="90"/>
+        <Button Content="To materials" HorizontalAlignment="Left" Height="35" Margin="40,366,0,0" VerticalAlignment="Top" Width="90"/>
+        <Label Content="You have entered as a teacher" Margin="10,10,39,389" Grid.ColumnSpan="2" FontFamily="Georgia" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <GroupBox HorizontalAlignment="Left" Height="193" Header="Filters" Margin="366,62,0,0" VerticalAlignment="Top" Width="281" RenderTransformOrigin="0.056,0.193"/>
+        <Label Content="Language" Margin="373,110,272,298"/>
+        <Label Content="Year" Margin="373,164,272,244"/>
+        <Label Content="Course" Margin="373,214,288,191"/>
+        <ComboBox Margin="495,110,93,301"/>
+        <ComboBox Margin="495,159,93,252"/>
+        <ComboBox Margin="495,217,93,194"/>
+        <Button Content="Reset " Margin="652,130,58,263" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="corseWork.loginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:corseWork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Distant materials" HorizontalAlignment="Left" Height="47" Margin="214,100,0,0" VerticalAlignment="Top" Width="398" FontFamily="Georgia" FontSize="20" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Username" HorizontalAlignment="Left" Height="27" Margin="59,176,0,0" VerticalAlignment="Top" Width="161" FontFamily="Georgia" FontSize="14"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="27" Margin="59,217,0,0" VerticalAlignment="Top" Width="161" FontFamily="Georgia" FontSize="14"/>
+        <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Height="27" Margin="214,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" TextChanged="UserName_textbox"/>
+        <Button Content="Login" HorizontalAlignment="Left" Height="22" Margin="300,327,0,0" VerticalAlignment="Top" Width="100" Background="#FFF4D8F3" FontFamily="Georgia" FontSize="14" Click="Login_btn"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="27" Margin="214,217,0,0" VerticalAlignment="Top" Width="199" Password=""/>
+
+        <!-- Add a DataGrid with a name -->
+        <DataGrid x:Name="userDataGrid" HorizontalAlignment="Left" Margin="5,2,0,0" VerticalAlignment="Top" Width="650" AutoGenerateColumns="True" />
+
+    </Grid>
+</Window>
+
