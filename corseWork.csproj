@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="gratis-png-emoji-iphone-smiley-nerd-sticker-empollon-removebg-preview.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="gratis-png-emoji-iphone-smiley-nerd-sticker-empollon-removebg-preview.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

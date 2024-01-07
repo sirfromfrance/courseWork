@@ -6,29 +6,35 @@
         xmlns:local="clr-namespace:corseWork"
         mc:Ignorable="d"
         Title="student" Height="450" Width="800">
-    <Grid>
-        <!-- Останній код вашого XAML -->
+    <Viewbox Stretch="Fill">
+        <Grid Height="434.04" Width="800">
+            <!-- Останній код вашого XAML -->
 
-        <ComboBox x:Name= "yearComboBox"  Width="120" Margin="647,102,33,0" VerticalAlignment="Top" SelectionChanged="ComboBox_Year" IsDropDownOpen="True" Height="26"/>
-        <ComboBox x:Name= "languageComboBox" Width="120" Margin="647,168,33,0" VerticalAlignment="Top" SelectionChanged="ComboBox_Language" IsDropDownOpen="True" Height="26"/>
-        <ComboBox x:Name= "courseComboBox" Margin="645,236,35,0" VerticalAlignment="Top" SelectionChanged="ComboBox_Course" IsDropDownOpen="True" Width="120" Height="26">
-            <ComboBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="-0.088"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="-0.332"/>
-                </TransformGroup>
-            </ComboBox.RenderTransform>
-        </ComboBox>
-        <ComboBox x:Name="markComboBox" Width="120" Margin="647,303,33,106" SelectionChanged="ComboBox_Mark" IsDropDownOpen="True" Height="25"/>
+            <ComboBox x:Name= "yearComboBox"  Width="120" Margin="26,239,654,0" VerticalAlignment="Top" SelectionChanged="ComboBox_Year" IsDropDownOpen="False" Height="26"/>
+            <ComboBox x:Name= "languageComboBox" Width="120" Margin="230,239,450,0" VerticalAlignment="Top" SelectionChanged="ComboBox_Language" IsDropDownOpen="False" Height="26"/>
+            <ComboBox x:Name= "courseComboBox" Margin="441,240,239,0" VerticalAlignment="Top" SelectionChanged="ComboBox_Course" IsDropDownOpen="False" Width="120" Height="26">
+                <ComboBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-0.088"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.332"/>
+                    </TransformGroup>
+                </ComboBox.RenderTransform>
+            </ComboBox>
+            <ComboBox x:Name="markComboBox" Width="120" Margin="647,236,33,173" SelectionChanged="ComboBox_Mark" IsDropDownOpen="False" Height="25"/>
 
-        <!-- Додавання обробників подій для ComboBox_Year, ComboBox_Language, ComboBox_Course, і ComboBox_Mark -->
-        <Label Content="Year" Margin="562,102,158,0" Width="80" Height="30" VerticalAlignment="Top"/>
-        <Label Content="Language" Margin="549,164,171,0" Width="80" Height="30" VerticalAlignment="Top"/>
-        <Label Content="Course" Margin="549,229,0,0" HorizontalAlignment="Left" Width="80" Height="30" VerticalAlignment="Top"/>
-        <TextBox x:Name ="searchField" TextWrapping="Wrap" Margin="36,122,364,97" Background="#FFE3E3E3" TextChanged="TextBox_SearchField" Height="200" Width="400"/>
-        <Label Content="Mark" Margin="549,300,171,0" Width="80" Height="30" VerticalAlignment="Top"/>
-        <DataGrid x:Name="studentDataGrid" HorizontalAlignment="Left" Margin="5,2,0,0" VerticalAlignment="Top" Width="650" AutoGenerateColumns="True" />
-    </Grid>
+            <!-- Додавання обробників подій для ComboBox_Year, ComboBox_Language, ComboBox_Course, і ComboBox_Mark -->
+            <Label Content="Year" Margin="26,208,694,0" Width="80" Height="30" VerticalAlignment="Top"/>
+            <Label Content="Language" Margin="230,208,490,0" Width="80" Height="30" VerticalAlignment="Top" RenderTransformOrigin="0.394,1.901"/>
+            <Label Content="Course" Margin="435,211,0,0" HorizontalAlignment="Left" Width="80" Height="30" VerticalAlignment="Top"/>
+            <TextBox x:Name ="searchField" TextWrapping="Wrap" Margin="26,74,400,319" Background="#FFE3E3E3" TextChanged="TextBox_SearchField"/>
+            <Label Content="Mark" Margin="647,211,73,0" Width="80" Height="30" VerticalAlignment="Top"/>
+            <Label Content="You have entered as a student" Margin="10,10,349,360" FontFamily="Georgia" FontSize="20" FontWeight="Bold" FontStyle="Italic"/>
+            <Button Content="Search" Margin="420,79,314,326" RenderTransformOrigin="-0.068,0.105" FontFamily="Georgia" FontSize="14" FontWeight="Bold"/>
+            <Button Content="Exit" HorizontalAlignment="Left" Height="41" Margin="657,358,0,0" VerticalAlignment="Top" Width="110" FontFamily="Georgia" FontSize="16" FontWeight="Bold"/>
+
+            <Image Margin="532,28,58,276" Source="/gratis-png-emoji-iphone-smiley-nerd-sticker-empollon-removebg-preview.png" Stretch="Fill"/>
+        </Grid>
+    </Viewbox>
 </Window>

@@ -7,6 +7,8 @@ namespace corseWork
 {
     public partial class loginWindow : Window
     {
+        private const string CONNECTION_STRING = @"Server=LAPTOP-ACER; Database=distantMaterial; Integrated Security=True; Encrypt=False;";
+
         public loginWindow()
         {
             InitializeComponent();
@@ -17,10 +19,9 @@ namespace corseWork
         {
             try
             {
-                string connectionString = @"Server=LAPTOP-ACER; Database=distantMaterial; Integrated Security=True; Encrypt=False;";
                 string query = "SELECT * FROM users";
 
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(CONNECTION_STRING))
                 {
                     SqlCommand command = new SqlCommand(query, connection);
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
@@ -44,10 +45,9 @@ namespace corseWork
 
             try
             {
-                string connectionString = @"Server=LAPTOP-ACER; Database=distantMaterial; Integrated Security=True; Encrypt=False;";
                 string query = "SELECT id_role FROM users WHERE username = @Username AND userPassword = @Password";
 
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(CONNECTION_STRING))
                 {
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@Username", username);
