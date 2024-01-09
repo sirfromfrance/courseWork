@@ -10,15 +10,16 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="Distant materials" HorizontalAlignment="Left" Height="47" Margin="214,100,0,0" VerticalAlignment="Top" Width="398" FontFamily="Georgia" FontSize="20" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Distant materials" HorizontalAlignment="Left" Height="47" Margin="214,100,0,0" VerticalAlignment="Top" Width="398" FontFamily="Georgia" FontSize="25" FontWeight="Bold" FontStyle="Italic"/>
         <Label Content="Username" HorizontalAlignment="Left" Height="27" Margin="59,176,0,0" VerticalAlignment="Top" Width="161" FontFamily="Georgia" FontSize="14"/>
         <Label Content="Password" HorizontalAlignment="Left" Height="27" Margin="59,217,0,0" VerticalAlignment="Top" Width="161" FontFamily="Georgia" FontSize="14"/>
         <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Height="27" Margin="214,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" TextChanged="UserName_textbox"/>
         <Button Content="Login" HorizontalAlignment="Left" Height="22" Margin="300,327,0,0" VerticalAlignment="Top" Width="100" Background="#FFF4D8F3" FontFamily="Georgia" FontSize="14" Click="Login_btn"/>
         <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="27" Margin="214,217,0,0" VerticalAlignment="Top" Width="199" Password=""/>
 
-        <!-- Add a DataGrid with a name -->
         <DataGrid x:Name="userDataGrid" HorizontalAlignment="Left" Margin="5,2,0,0" VerticalAlignment="Top" Width="650" AutoGenerateColumns="True" />
+        <Image x:Name="books" Grid.Row="0" Margin="537,124,103,150" Source="books_1f4da.png" Stretch="Fill"/>
+
 
     </Grid>
 </Window>

@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="books_1f4da.png" />
     <None Remove="gratis-png-emoji-iphone-smiley-nerd-sticker-empollon-removebg-preview.png" />
   </ItemGroup>
 
@@ -16,6 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="books_1f4da.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="gratis-png-emoji-iphone-smiley-nerd-sticker-empollon-removebg-preview.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

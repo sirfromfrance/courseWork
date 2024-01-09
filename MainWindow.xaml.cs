@@ -28,7 +28,7 @@ namespace corseWork
                     DataTable dataTable = new DataTable();
 
                     adapter.Fill(dataTable);
-                   // userDataGrid.ItemsSource = dataTable.DefaultView;
+                   
                 }
             }
             catch (Exception ex)
