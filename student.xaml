@@ -8,7 +8,6 @@
         Title="student" Height="450" Width="800">
     <Viewbox Stretch="Fill">
         <Grid Height="434.04" Width="800">
-            <!-- Останній код вашого XAML -->
 
             <ComboBox x:Name="yearComboBox" Width="120" Margin="26,239,654,0" VerticalAlignment="Top" SelectionChanged="ComboBox_Year" IsDropDownOpen="False" Height="26"/>
             <ComboBox x:Name="languageComboBox" Width="120" Margin="230,239,450,0" VerticalAlignment="Top" SelectionChanged="ComboBox_Language" IsDropDownOpen="False" Height="26"/>
@@ -24,7 +23,7 @@
             </ComboBox>
             <ComboBox x:Name="markComboBox" Width="120" Margin="647,236,33,173" SelectionChanged="ComboBox_Mark" IsDropDownOpen="False" Height="25"/>
 
-            <!-- Додавання обробників подій для ComboBox_Year, ComboBox_Language, ComboBox_Course, і ComboBox_Mark -->
+           
             <Label Content="Year" Margin="26,208,694,0" Width="80" Height="30" VerticalAlignment="Top"/>
             <Label Content="Language" Margin="230,208,490,0" Width="80" Height="30" VerticalAlignment="Top" RenderTransformOrigin="0.394,1.901"/>
             <Label Content="Course" Margin="435,211,0,0" HorizontalAlignment="Left" Width="80" Height="30" VerticalAlignment="Top"/>
@@ -36,7 +35,7 @@
 
             <Image Grid.Row="0" Margin="410,10,304,371" Source="/gratis-png-emoji-iphone-smiley-nerd-sticker-empollon-removebg-preview.png" Stretch="Fill"/>
 
-            <!-- Додавання DataGrid -->
+           
             <DataGrid x:Name="studentDataGrid" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="4" Height="1" AutoGenerateColumns="True"/>
 
         </Grid>

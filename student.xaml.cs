@@ -47,55 +47,15 @@ namespace corseWork
                 comboBox.ItemsSource = mark;
             }
         }
-
-
-       
- 
-
-        private void TextBox_SearchField(object sender, TextChangedEventArgs e)
-        {
-           
-        }
-        
-
-        
-
-        private void ComboBox_Year(object sender, SelectionChangedEventArgs e)
-        {      
-            
-        }
-       
-
-       
-        private void ComboBox_Language(object sender, SelectionChangedEventArgs e)
-        {
-           
-        }
-
-        private void ComboBox_Course(object sender, SelectionChangedEventArgs e)
-        {
-            
-        }
-
-        private void ComboBox_Mark(object sender, SelectionChangedEventArgs e)
-        {
-            
-        }
-
-        private void Button_exit(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
-
         private void Button_Search(object sender, RoutedEventArgs e)
         {
-           
+
             string title = searchField.Text;
             string year = (string)yearComboBox.SelectedValue;
             string language = (string)languageComboBox.SelectedValue;
             string course = (string)courseComboBox.SelectedValue;
             string mark = (string)markComboBox.SelectedValue;
-          
+
             List<string> errors = new List<string>();
 
             if (string.IsNullOrEmpty(title))
@@ -130,13 +90,46 @@ namespace corseWork
                 return;
             }
 
-            Materials materialsWindow = new Materials(title,"" ,year, language, course, mark, "");
-            if(materialsWindow.materialGrid.ItemsSource != null)
+            Materials materialsWindow = new Materials(title, "", year, language, course, mark, "");
+            if (materialsWindow.materialGrid.ItemsSource != null)
             {
                 materialsWindow.Show();
             }
-            
-          
         }
+        private void Button_exit(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+
+
+
+
+        private void TextBox_SearchField(object sender, TextChangedEventArgs e)
+        {
+           
+        }    
+
+        private void ComboBox_Year(object sender, SelectionChangedEventArgs e)
+        {      
+            
+        }
+        private void ComboBox_Language(object sender, SelectionChangedEventArgs e)
+        {
+           
+        }
+
+        private void ComboBox_Course(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
+
+        private void ComboBox_Mark(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
+
+        
+       
     }
 }
