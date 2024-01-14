@@ -8,10 +8,19 @@
         Title="Materials" Height="450" Width="800">
     <Viewbox Stretch="Fill">
         <Grid Height="434.04" Width="800">
-            <Label Content="Found materials" Margin="0,0,0,361" FontFamily="Georgia" FontSize="25" FontStyle="Italic" FontWeight="Heavy"/>
+            <Label Content="Found materials" Margin="10,0,-10,361" FontFamily="Georgia" FontSize="25" FontStyle="Italic" FontWeight="Heavy"/>
             <Button Content="Exit" Margin="673,19,39,380" FontFamily="Georgia" FontSize="20" Click="Exit_btn"/>
-            <DataGrid x:Name="materialGrid" HorizontalAlignment="Left" Margin="35,117,0,0" VerticalAlignment="Top" Width="414" Height="137" AutoGenerateColumns="True"/>
-            <TextBox TextWrapping="Wrap" Text="TextBox" Margin="515,186,39,50"/>
+            <DataGrid x:Name="materialGrid" HorizontalAlignment="Center" Margin="0,73,0,0" VerticalAlignment="Top" Width="724" Height="102" AutoGenerateColumns="True"/>
+            <TextBox x:Name ="commentGrid" Margin="38,255,242,59" FontFamily="Sans Serif Collection" TextChanged="TextBox_Comment" TextWrapping="Wrap"/>
+            <Label Content="You can add your comment:" Margin="38,217,-10,183" FontFamily="Georgia" FontSize="20"/>
+            <Image Grid.Row="0" Margin="300,115,373,132" Source="/26fad70eac545db7272026ef76335d25.png" Stretch="Fill"/>
+            <Button Content="Publish" HorizontalAlignment="Left" Height="43" Margin="202,380,0,0" VerticalAlignment="Top" Width="196" FontFamily="Georgia" FontSize="16" Click="Button_PublishComment"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="882,411,0,0" VerticalAlignment="Top" Width="0"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="938,411,0,0" VerticalAlignment="Top" Width="0"/>
+            <Label Content="To grade the material" Margin="599,219,-599,155" FontFamily="Georgia" FontSize="18"/>
+            <ComboBox x:Name="GradeMaterial" Margin="600,263,38,125" SelectionChanged="ComboBox_GradeMaterial" Width="160" Height="40"/>
+            <Button Content="Grade&#xD;&#xA;" Margin="639,389,77,11" Click="Button_GradeMaterial" FontFamily="Georgia" FontSize="16"/>
+            <Image Margin="257,-9,461,361" Source="/books_1f4da.png" Stretch="Fill"/>
 
         </Grid>
     </Viewbox>

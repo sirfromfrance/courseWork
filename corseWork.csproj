@@ -8,8 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="1f469-200d-1f3eb.png" />
+    <None Remove="26fad70eac545db7272026ef76335d25.png" />
+    <None Remove="bbca4d1ba3fc1ee872ae5571a53069fb.jpg" />
     <None Remove="books_1f4da.png" />
+    <None Remove="dbba302bf7f572bc03b2da95c0658293.jpg" />
+    <None Remove="door_1f6aa.png" />
     <None Remove="gratis-png-emoji-iphone-smiley-nerd-sticker-empollon-removebg-preview.png" />
+    <None Remove="Vexels-Office-Trash.1024.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="door_1f6aa.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -17,10 +29,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="1f469-200d-1f3eb.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="26fad70eac545db7272026ef76335d25.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="bbca4d1ba3fc1ee872ae5571a53069fb.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="books_1f4da.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="dbba302bf7f572bc03b2da95c0658293.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="gratis-png-emoji-iphone-smiley-nerd-sticker-empollon-removebg-preview.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Vexels-Office-Trash.1024.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

@@ -6,23 +6,28 @@
         xmlns:local="clr-namespace:corseWork"
         mc:Ignorable="d"
         Title="teacher" Height="450" Width="800">
-    <Grid RenderTransformOrigin="0.485,0.303">
+    <Grid RenderTransformOrigin="0.485,0.303" Width="800" Height="435">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="722*"/>
             <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
-        <TextBox HorizontalAlignment="Left" Height="35" Margin="10,76,0,0" TextWrapping="Wrap" Text="Search for materials" VerticalAlignment="Top" Width="343" FontFamily="Georgia" FontSize="14"/>
-        <Button Content="SEARCH!" HorizontalAlignment="Left" Height="35" Margin="652,76,0,0" VerticalAlignment="Top" Width="90" FontFamily="Georgia" FontSize="14" Grid.ColumnSpan="2"/>
-        <Button Content="exit" HorizontalAlignment="Left" Height="35" Margin="366,366,0,0" VerticalAlignment="Top" Width="90"/>
-        <Button Content="To materials" HorizontalAlignment="Left" Height="35" Margin="40,366,0,0" VerticalAlignment="Top" Width="90"/>
-        <Label Content="You have entered as a teacher" Margin="10,10,39,389" Grid.ColumnSpan="2" FontFamily="Georgia" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
-        <GroupBox HorizontalAlignment="Left" Height="193" Header="Filters" Margin="366,62,0,0" VerticalAlignment="Top" Width="281" RenderTransformOrigin="0.056,0.193"/>
-        <Label Content="Language" Margin="373,110,272,298"/>
-        <Label Content="Year" Margin="373,164,272,244"/>
-        <Label Content="Course" Margin="373,214,288,191"/>
-        <ComboBox Margin="495,110,93,301"/>
-        <ComboBox Margin="495,159,93,252"/>
-        <ComboBox Margin="495,217,93,194"/>
-        <Button Content="Reset " Margin="652,130,58,263" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="searchField" HorizontalAlignment="Left" Height="42" Margin="12,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580" FontFamily="Georgia" FontSize="14" TextChanged="TextBox_SearchTeacher"/>
+        <Button Content="SEARCH!" HorizontalAlignment="Left" Height="34" Margin="597,114,0,0" VerticalAlignment="Top" Width="164" FontFamily="Georgia" FontSize="16" Click="Button_Search" Grid.ColumnSpan="2" FontStretch="Expanded" FontWeight="Heavy"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Height="35" Margin="671,23,0,0" VerticalAlignment="Top" Width="90" Grid.ColumnSpan="2" FontFamily="Georgia" FontSize="20" Click="Button_Exit" Foreground="Black" Background="#FFC5C5C5" FontWeight="Heavy"/>
+        <Button Content="To materials" HorizontalAlignment="Left" Height="47" Margin="635,361,0,0" VerticalAlignment="Top" Width="134" FontFamily="Georgia" FontSize="18" Click="Button_ToMaterials" Grid.ColumnSpan="2" FontStretch="Medium" FontWeight="Heavy"/>
+        <Label Content="You have entered as a teacher" Margin="10,20,385,379" FontFamily="Georgia" FontSize="20" FontWeight="Bold" FontStyle="Italic" Height="35"/>
+        <Label Content="Language" Margin="383,309,261,93" RenderTransformOrigin="-1.084,4.598" FontSize="15" FontFamily="Georgia"/>
+        <Label Content="Year" Margin="37,221,631,189" Height="25" FontFamily="Georgia" FontSize="15"/>
+        <Label Content="Course" Margin="397,213,261,192" Height="30" FontFamily="Georgia" FontSize="15"/>
+        <Button Content="Reset " Margin="292,378,292,27" FontFamily="Georgia" FontSize="16" Click="Button_ResetFilters" FontWeight="Heavy" Width="137" Height="30"/>
+        <Image Margin="341,10,321,365" Source="/1f469-200d-1f3eb.png" Stretch="Fill" Height="60" IsHitTestVisible="False" RenderTransformOrigin="1.085,0.617" Width="60"/>
+        <DataGrid x:Name="teacherDataGrid" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="4" Height="1" AutoGenerateColumns="True"/>
+        <ComboBox x:Name="languageComboBox" Margin="460,309,111,96" SelectionChanged="ComboBox_Language" Width="150" Height="30"/>
+        <ComboBox x:Name="yearComboBox" Margin="86,216,468,189" SelectionChanged="ComboBox_Year" Height="30" Width="150"/>
+        <ComboBox x:Name="courseComboBox" Margin="460,211,111,194" SelectionChanged="ComboBox_Course" FontSize="14" FontFamily="Georgia" Width="150" Height="30" RenderTransformOrigin="1.02,0.485"/>
+        <ComboBox x:Name="markComboBox" Margin="95,309,476,96" SelectionChanged="ComboBox_Mark" Width="150" Height="30"/>
+        <Label Content="Mark&#xD;&#xA;" Margin="37,309,631,96" FontFamily="Georgia" FontSize="15"/>
+        <Label Content="Search for materials" HorizontalAlignment="Left" Margin="12,84,0,0" VerticalAlignment="Top" Width="200" Height="25" FontFamily="Georgia" FontSize="16"/>
+        <Image Margin="635,168,39,96" Source="/bbca4d1ba3fc1ee872ae5571a53069fb.jpg" Stretch="Fill" Grid.ColumnSpan="2" RenderTransformOrigin="0.476,0.67" Width="126" Height="170" IsHitTestVisible="False"/>
     </Grid>
 </Window>

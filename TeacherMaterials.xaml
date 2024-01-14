@@ -1,0 +1,24 @@
+﻿<Window x:Class="corseWork.TeacherMaterials"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:corseWork"
+        mc:Ignorable="d"
+        Title="TeacherMaterials" Height="450" Width="800">
+    <Grid Width="800" Height="435">
+        <Label Content="Your materials" Margin="10,10,390,374" FontFamily="Georgia" FontSize="23" Height="50" Width="400" FontWeight="Bold" FontStyle="Italic">
+            <Label.BindingGroup>
+                <BindingGroup/>
+            </Label.BindingGroup>
+        </Label>
+        <Button Content="Add" Margin="25,328,660,72" Width="115" Height="35" Click="Button_addMaterial" FontFamily="Georgia" FontSize="16"/>
+        <Button Content="Edit" Margin="638,328,47,72" Height="35" Width="115" Click="Button_EditMaterial" FontFamily="Georgia" FontSize="16"/>
+        <Button Content="Delete" Margin="342,328,342,72" Width="115" Height="35" Click="Button_deleteMaterial" FontFamily="Georgia" FontSize="16"/>
+        <Button Content="Exit" Margin="624,22,66,375" Width="110" Click="Button_Exit" FontFamily="Georgia" FontSize="16"/>
+        <Image Margin="210,-38,492,319" Source="/dbba302bf7f572bc03b2da95c0658293.jpg" Stretch="Fill"/>
+        <DataGrid x:Name="TeachermaterialGrid" HorizontalAlignment="Center" Margin="0,82,0,0" VerticalAlignment="Top" Height="180" AutoGenerateColumns="True" Width="750" SelectionChanged="TeachermaterialGrid_SelectionChanged"/>
+        <Image Margin="734,6,0,363" Source="/door_1f6aa.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>

@@ -61,7 +61,7 @@ namespace corseWork
                     {
                         int roleId = Convert.ToInt32(result);
 
-                        // Відкриваємо вікно в залежності від ролі користувача
+                       
                         if (roleId == 1) // Адміністратор
                         {
                             var adminWindow = new admin();
@@ -77,6 +77,8 @@ namespace corseWork
                             var teacherWindow = new teacher();
                             teacherWindow.Show();
                         }
+                        CurrentUser.username = username;
+                        CurrentUser.role = roleId;
                     }
                     else
                     {
@@ -89,9 +91,6 @@ namespace corseWork
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
-
-
-
         private void UserName_textbox(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
 

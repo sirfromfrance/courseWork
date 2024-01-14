@@ -14,10 +14,7 @@ namespace corseWork
         public student()
         {
             InitializeComponent();
-            yearComboBox.SelectionChanged += ComboBox_Year;
-            languageComboBox.SelectionChanged += ComboBox_Language;
-            courseComboBox.SelectionChanged += ComboBox_Course;
-            markComboBox.SelectionChanged += ComboBox_Mark;
+           
             ComboBoxHelper.MaterialYears(yearComboBox);
             ComboBoxHelper.MaterialLanguages(languageComboBox); 
             ComboBoxHelper.MaterialCourses(courseComboBox);
@@ -62,22 +59,8 @@ namespace corseWork
             {
                 errors.Add("Title is null or empty");
             }
-            if (string.IsNullOrEmpty(year))
-            {
-                errors.Add("Year is null or empty");
-            }
-            if (string.IsNullOrEmpty(language))
-            {
-                errors.Add("Language is null or empty");
-            }
-            if (string.IsNullOrEmpty(course))
-            {
-                errors.Add("Course is null or empty");
-            }
-            if (string.IsNullOrEmpty(mark))
-            {
-                errors.Add("Mark is null or empty");
-            }
+            
+            
             string error = default;
             foreach (string tmp in errors)
             {
@@ -90,7 +73,7 @@ namespace corseWork
                 return;
             }
 
-            Materials materialsWindow = new Materials(title, "", year, language, course, mark, "");
+            Materials materialsWindow = new Materials(title, "", year, language, course,  "");
             if (materialsWindow.materialGrid.ItemsSource != null)
             {
                 materialsWindow.Show();

@@ -6,9 +6,14 @@
         xmlns:local="clr-namespace:corseWork"
         mc:Ignorable="d"
         Title="admin" Height="450" Width="800">
-    <Grid>
-        <Label Content="You have entered as an admin" Margin="0,0,338,398" FontFamily="Georgia" FontSize="20" FontWeight="Bold" FontStyle="Italic"/>
-        <Label Content="Label" Margin="0,56,0,344"/>
-
+    <Grid Margin="0,0,-10,-57" Width="810" Height="490">
+        <Label Content="You have entered as an admin" Margin="0,0,338,398" FontFamily="Georgia" FontSize="20" FontWeight="Bold" FontStyle="Italic" Width="470" Height="90"/>
+        <DataGrid x:Name="commentDataGrid" HorizontalAlignment="Center" Margin="0,296,0,0" VerticalAlignment="Top" Width="754" Height="121" AutoGenerateColumns="True"/>
+        <DataGrid x:Name="materialsDataGrid" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top" Width="780" Height="119" AutoGenerateColumns="True"/>
+        <Button Content="Exit" Margin="695,10,15,455" Width="100" Height="25" Click="Button_Exit"/>
+        <Label Content="All materials" HorizontalAlignment="Left" Margin="15,47,0,0" VerticalAlignment="Top" Width="155" FontSize="15" Height="30"/>
+        <Label Content="All comments" HorizontalAlignment="Left" Margin="15,241,0,0" VerticalAlignment="Top" Width="128" FontSize="15" Height="38"/>
+        <Button Content="Delete materials" HorizontalAlignment="Left" Margin="15,210,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="Button_DeleteMaterial"/>
+        <Button Content="Delete comment" HorizontalAlignment="Left" Margin="695,253,0,0" VerticalAlignment="Top" Height="26" Width="97" RenderTransformOrigin="0.784,2.309" Click="Button_DeleteComment"/>
     </Grid>
 </Window>
