@@ -30,12 +30,12 @@ namespace corseWork
             }
 
             public static void MaterialLanguages(ComboBox comboBox) {
-                List<string> languages = new List<string> {"English", "Ukrainian" };
+                List<string> languages = new List<string> {"English", "Ukrainian","French" };
                 comboBox.ItemsSource = languages;   
                 }
             public static void MaterialCourses(ComboBox comboBox)
             {
-                List<string> courses = new List<string> {"1","2","3","4"};
+                List<string> courses = new List<string> {"1","2","3","4","5"};
                 comboBox.ItemsSource = courses; 
             }
             public static void MaterialMark(ComboBox comboBox)

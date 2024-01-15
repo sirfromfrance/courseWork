@@ -528,17 +528,17 @@
             <Label Content="Found materials" Margin="120,37,432,361" FontFamily="Georgia" FontSize="25" FontStyle="Italic" FontWeight="Heavy"/>
             <Button Style="{DynamicResource ButtonStyle2}" Content="Exit" Margin="637,24,72,375" FontFamily="Georgia" FontSize="20" Click="Exit_btn" Height="35" Width="90"/>
             <DataGrid Style="{DynamicResource DataGridStyle1}" x:Name="materialGrid" HorizontalAlignment="Center" Margin="0,73,0,0" VerticalAlignment="Top" Width="724" Height="117" AutoGenerateColumns="True" FontFamily="Georgia" FontSize="14"/>
-            <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name ="commentGrid" Margin="38,255,242,59" FontFamily="Arial" TextChanged="TextBox_Comment" TextWrapping="Wrap" FontSize="15" Height="120" Width="520"/>
+            <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name ="commentGrid" Margin="38,255,215,61" FontFamily="Arial" TextChanged="TextBox_Comment" TextWrapping="Wrap" FontSize="15" Width="545" Height="115"/>
             <Label Content="You can add your comment:" Margin="38,217,470,183" FontFamily="Georgia" FontSize="20" Width="290" Height="34"/>
             <Image Grid.Row="0" Margin="288,180,432,154" Source="/26fad70eac545db7272026ef76335d25.png" Stretch="Fill" Height="100" Width="80" RenderTransformOrigin="0.492,0.67"/>
-            <Button Style="{DynamicResource ButtonStyle1}" Content="Publish" HorizontalAlignment="Left" Height="43" Margin="261,384,0,0" VerticalAlignment="Top" Width="139" FontFamily="Georgia" FontSize="16" Click="Button_PublishComment" FontWeight="Heavy"/>
+            <Button Style="{DynamicResource ButtonStyle1}" Content="Publish" HorizontalAlignment="Left" Height="43" Margin="261,378,0,0" VerticalAlignment="Top" Width="139" FontFamily="Georgia" FontSize="16" Click="Button_PublishComment" FontWeight="Heavy"/>
             <Button Content="Button" HorizontalAlignment="Left" Margin="882,411,0,0" VerticalAlignment="Top" Width="0"/>
             <Button Content="Button" HorizontalAlignment="Left" Margin="938,411,0,0" VerticalAlignment="Top" Width="0"/>
             <Label Content="To grade the material" Margin="590,234,25,168" FontFamily="Georgia" FontSize="18" Width="185" Height="32"/>
             <ComboBox Style="{DynamicResource ComboBoxStyle1}" x:Name="GradeMaterial" Margin="600,263,38,125" SelectionChanged="ComboBox_GradeMaterial" Width="160" Height="40"/>
             <Image Margin="38,0,680,352" Source="/books_1f4da.png" Stretch="Fill"/>
             <Image Margin="728,11,12,363" Source="/door_1f6aa.png" Stretch="Fill" Height="60" Width="60"/>
-            <Image Margin="405,389,355,10" Source="/2705.png" Stretch="Fill" Height="35" Width="40"/>
+            <Image Margin="405,382,355,17" Source="/2705.png" Stretch="Fill" Height="35" Width="35"/>
 
         </Grid>
     </Viewbox>

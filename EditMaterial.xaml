@@ -208,7 +208,7 @@
     </Window.Resources>
     <Grid Width="800" Height="435">
         <DataGrid x:Name="EditMaterialWindow" HorizontalAlignment="Center" VerticalAlignment="Top" Width="1" Height="1" AutoGenerateColumns="True" SelectionChanged="EditMaterialWindow_SelectionChanged" Margin="0,10,0,0"/>
-        <Button Style="{DynamicResource ButtonStyle2}" Content="Accept&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,381,0,0" Height="43" Width="90" Click="Button_Accept" FontFamily="Georgia" FontSize="16" HorizontalContentAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Bottom"/>
+        <Button Style="{DynamicResource ButtonStyle2}" Content="Accept&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,381,0,0" Height="43" Width="90" Click="Button_Accept" FontFamily="Georgia" FontSize="16" HorizontalContentAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Bottom" FontWeight="Bold"/>
         <Button Style="{DynamicResource ButtonStyle1}" Content="Exit" Margin="715,10,10,375" Click="Button_Exit" FontFamily="Georgia" FontSize="16" Width="75" Height="50"/>
         <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="TitleChange" TextWrapping="Wrap" Height="33" Margin="78,65,10,0" VerticalAlignment="Top" TextChanged="TextBox_TitleChanged" FontSize="14" FontFamily="Georgia" Width="705"/>
         <TextBox Style="{DynamicResource TextBoxStyle2}" x:Name="DescriptionChange" TextWrapping="Wrap" Margin="10,171,10,81" TextChanged="TextBox_DescriptionChanged" Width="780"/>
