@@ -9,16 +9,44 @@
 
   <ItemGroup>
     <None Remove="1f469-200d-1f3eb.png" />
+    <None Remove="1f50d.png" />
+    <None Remove="1f58b-fe0f.png" />
     <None Remove="26fad70eac545db7272026ef76335d25.png" />
+    <None Remove="2705.png" />
+    <None Remove="324560f56c1717668f1a72653fef8744.png" />
+    <None Remove="63bd0626976933353b32db507c89bc95-removebg-preview.png" />
     <None Remove="bbca4d1ba3fc1ee872ae5571a53069fb.jpg" />
+    <None Remove="booksyellow.png" />
     <None Remove="books_1f4da.png" />
-    <None Remove="dbba302bf7f572bc03b2da95c0658293.jpg" />
     <None Remove="door_1f6aa.png" />
+    <None Remove="eeefe884fc9d66d79f17b30f9b57fc23__1_-removebg-preview.png" />
     <None Remove="gratis-png-emoji-iphone-smiley-nerd-sticker-empollon-removebg-preview.png" />
+    <None Remove="pencil_270f.png" />
     <None Remove="Vexels-Office-Trash.1024.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="1f50d.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="2705.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1f58b-fe0f.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="324560f56c1717668f1a72653fef8744.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="63bd0626976933353b32db507c89bc95-removebg-preview.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="booksyellow.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="door_1f6aa.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -41,10 +69,13 @@
     <Resource Include="books_1f4da.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="dbba302bf7f572bc03b2da95c0658293.jpg">
+    <Resource Include="eeefe884fc9d66d79f17b30f9b57fc23__1_-removebg-preview.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="gratis-png-emoji-iphone-smiley-nerd-sticker-empollon-removebg-preview.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pencil_270f.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Vexels-Office-Trash.1024.png">
