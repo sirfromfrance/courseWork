@@ -18,7 +18,7 @@ namespace corseWork
             ComboBoxHelper.MaterialYears(yearComboBox);
             ComboBoxHelper.MaterialLanguages(languageComboBox); 
             ComboBoxHelper.MaterialCourses(courseComboBox);
-            ComboBoxHelper.MaterialMark(markComboBox);
+           // ComboBoxHelper.MaterialMark(markComboBox);
 
         }
         public class ComboBoxHelper
@@ -51,7 +51,7 @@ namespace corseWork
             string year = (string)yearComboBox.SelectedValue;
             string language = (string)languageComboBox.SelectedValue;
             string course = (string)courseComboBox.SelectedValue;
-            string mark = (string)markComboBox.SelectedValue;
+           // string mark = (string)markComboBox.SelectedValue;
 
             List<string> errors = new List<string>();
 

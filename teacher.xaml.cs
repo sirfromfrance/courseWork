@@ -18,7 +18,7 @@ namespace corseWork
             ComboBoxHelper.MaterialYears(yearComboBox);
             ComboBoxHelper.MaterialLanguages(languageComboBox);
             ComboBoxHelper.MaterialCourses(courseComboBox);
-            ComboBoxHelper.MaterialMark(markComboBox);
+           // ComboBoxHelper.MaterialMark(markComboBox);
         }
 
         private void TextBox_SearchTeacher(object sender, TextChangedEventArgs e)
@@ -37,9 +37,9 @@ namespace corseWork
             string year = (string)yearComboBox.SelectedValue;
             string language = (string)languageComboBox.SelectedValue;
             string course = (string)courseComboBox.SelectedValue;
-            string mark = (string)markComboBox.SelectedValue;
+           // string mark = (string)markComboBox.SelectedValue;
             string username = CurrentUser.username;
-            TeacherMaterials TmaterialsWindow = new TeacherMaterials(title,"",year,language,course,mark, username);
+            TeacherMaterials TmaterialsWindow = new TeacherMaterials(title,"",year,language,course, username);
             TmaterialsWindow.Show();
         }
 
@@ -49,7 +49,7 @@ namespace corseWork
             string year = (string)yearComboBox.SelectedValue;
             string language = (string)languageComboBox.SelectedValue;
             string course = (string)courseComboBox.SelectedValue;
-            string mark = (string)markComboBox.SelectedValue;
+          //  string mark = (string)markComboBox.SelectedValue;
             List<string> errors = new List<string>();
 
             if (string.IsNullOrEmpty(title))
@@ -81,7 +81,7 @@ namespace corseWork
             yearComboBox.SelectedIndex = -1;
             languageComboBox.SelectedIndex = -1;
             courseComboBox.SelectedIndex = -1;
-            markComboBox.SelectedIndex = -1;
+           // markComboBox.SelectedIndex = -1;
         }
 
         private void ComboBox_Language(object sender, SelectionChangedEventArgs e)

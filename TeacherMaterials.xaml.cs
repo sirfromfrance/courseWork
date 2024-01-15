@@ -25,14 +25,14 @@ namespace corseWork
         private const string ConnectionString = @"Server=LAPTOP-ACER; Database=distantMaterial; Integrated Security=True; Encrypt=False;";
         public string teacherUsername;
 
-        public TeacherMaterials(string title, string description, string year, string language, string course, string mark, string username)
+        public TeacherMaterials(string title, string description, string year, string language, string course,  string username)
         {
             InitializeComponent();
             this.teacherUsername = username;
-            LoadTeacherMaterials( title,  description,  year,  language,  course,  mark,username);
+            LoadTeacherMaterials( title,  description,  year,  language,  course,  username);
           
         }
-        private void LoadTeacherMaterials(string title, string description, string year, string language, string course, string mark, string username)
+        private void LoadTeacherMaterials(string title, string description, string year, string language, string course,  string username)
         {
             string query = @"
              SELECT  
@@ -122,7 +122,7 @@ WHERE username = @TeacherUsername;
 
             }
                     
-            LoadTeacherMaterials("", "", "", "", "", "", teacherUsername);
+            LoadTeacherMaterials("", "", "", "", "",  teacherUsername);
         }
 
         private void Button_deleteMaterial(object sender, RoutedEventArgs e)
@@ -141,7 +141,7 @@ WHERE username = @TeacherUsername;
                    
                     DeleteMaterial(materialId);
 
-                    LoadTeacherMaterials("", "", "", "", "", "", teacherUsername);
+                    LoadTeacherMaterials("", "", "", "", "", teacherUsername);
                 }
             }
             else
@@ -188,7 +188,7 @@ WHERE username = @TeacherUsername;
                 
                 editMaterialWindow.ShowDialog();
 
-                LoadTeacherMaterials("", "", "", "", "", "", teacherUsername);
+                LoadTeacherMaterials("", "", "", "", "", teacherUsername);
             }
             else
             {
