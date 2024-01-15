@@ -544,15 +544,15 @@
         </DataGrid>
         <Button Style="{DynamicResource ButtonStyle2}" Content="Add" HorizontalAlignment="Left" Margin="655,379,0,0" VerticalAlignment="Top" Height="38" Width="109" Click="Button_addMaterial" FontFamily="Georgia" FontSize="16" FontWeight="Heavy"/>
         <Label Content="Language" Margin="30,130,660,275" Width="110" FontFamily="Georgia" Height="30" FontSize="16" FontStyle="Italic"/>
-        <Label Content="Year" Margin="300,131,390,277" Width="110" FontFamily="Georgia" FontSize="16" Height="30" FontStyle="Italic"/>
+        <Label Content="Year" Margin="322,130,368,275" Width="110" FontFamily="Georgia" FontSize="16" Height="30" FontStyle="Italic"/>
         <Label Content="Course" Margin="628,130,62,279" Width="110" FontFamily="Georgia" Height="30" FontSize="16" FontStyle="Italic"/>
-        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="TextBox_AddTitle" TextWrapping="Wrap" Margin="32,58,148,335" Height="42" FontFamily="Georgia" TextChanged="TextBox_AddTtitle" Width="620"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="TextBox_AddTitle" TextWrapping="Wrap" Margin="32,58,148,348" FontFamily="Arial" TextChanged="TextBox_AddTtitle" Width="620" FontSize="15" Height="30"/>
         <Label Content="Add title" Margin="85,23,605,382" FontFamily="Georgia" FontSize="20" Height="30" Width="110" FontStyle="Italic"/>
         <Label Content="Add description" Margin="98,236,533,159" FontFamily="Georgia" FontSize="20" Height="40" FontStyle="Italic"/>
-        <TextBox Style="{DynamicResource TextBoxStyle3}" x:Name="TextBox_AddDescription"  TextWrapping="Wrap" Margin="30,276,30,61" FontFamily="Georgia" TextChanged="TextBox_DescriptionAdd" Width="740" Height="98"/>
+        <TextBox Style="{DynamicResource TextBoxStyle3}" x:Name="TextBox_AddDescription"  TextWrapping="Wrap" Margin="30,276,30,61" FontFamily="Arial" TextChanged="TextBox_DescriptionAdd" Width="740" Height="98" FontSize="15"/>
         <Button Style="{DynamicResource ButtonStyle1}" Content="Exit" Margin="0,14,10,369" Width="66" HorizontalAlignment="Right" FontFamily="Georgia" FontSize="14" Click="Button_Exit" FontWeight="SemiBold" Height="50" />
         <ComboBox x:Name="LanguageBox" Margin="30,158,634,246" SelectionChanged="ComboBox_Language" FontFamily="Georgia" FontSize="14" Width="136" Height="30"/>
-        <ComboBox x:Name="YearBox" Margin="300,158,364,246" SelectionChanged="ComboBox_Year" FontFamily="Georgia" FontSize="14" Height="30" Width="136"/>
+        <ComboBox x:Name="YearBox" Margin="322,158,342,247" SelectionChanged="ComboBox_Year" FontFamily="Georgia" FontSize="14" Height="30" Width="136"/>
         <ComboBox Style="{DynamicResource ComboBoxStyle1}" x:Name="CourseBox" Margin="628,158,36,246" SelectionChanged="ComboBox_Course" FontFamily="Georgia" FontSize="14" Width="136" Height="30"/>
         <Image Margin="30,14,720,381" Source="/1f58b-fe0f.png" Stretch="Fill" RenderTransformOrigin="-1.29,0.478" Height="40" Width="40"/>
         <Image Margin="13,171,702,121" Source="/63bd0626976933353b32db507c89bc95-removebg-preview.png" Stretch="Fill" Height="140" IsManipulationEnabled="True" Width="85"/>

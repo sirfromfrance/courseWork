@@ -182,7 +182,7 @@
             <Label Content="Year" Margin="26,208,694,0" Width="80" Height="30" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16"/>
             <Label Content="Language" Margin="325,208,395,0" Width="80" Height="30" VerticalAlignment="Top" RenderTransformOrigin="0.394,1.901" FontFamily="Georgia" FontSize="16"/>
             <Label Content="Course" Margin="582,208,0,0" HorizontalAlignment="Left" Width="80" Height="30" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16"/>
-            <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="searchField" TextWrapping="Wrap" Margin="26,90,201,303" Background="#FFE3E3E3" TextChanged="TextBox_SearchField"/>
+            <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="searchField" TextWrapping="Wrap" Margin="28,91,202,313" Background="#FFE3E3E3" TextChanged="TextBox_SearchField" Width="570" Height="35" FontSize="16" FontFamily="Arial"/>
             <Label Content="You have entered as a student" Margin="86,15,273,355" FontFamily="Georgia" FontSize="25" FontWeight="Bold" FontStyle="Italic"/>
             <Button Style="{DynamicResource ButtonStyle1}" Content="Search" Margin="674,91,27,313" RenderTransformOrigin="-0.068,0.105" FontFamily="Georgia" FontSize="14" FontWeight="Bold" Click="Button_Search"/>
             <Button Style="{DynamicResource ButtonStyle2}" Content="Exit" HorizontalAlignment="Left" Height="41" Margin="647,363,0,0" VerticalAlignment="Top" Width="110" FontFamily="Georgia" FontSize="16" FontWeight="Bold" Click="Button_exit"/>
