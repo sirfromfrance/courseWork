@@ -316,13 +316,13 @@
         <DataGrid Style="{DynamicResource DataGridStyle2}" x:Name="materialsDataGrid" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top" Width="780" Height="119" AutoGenerateColumns="True"/>
         <Button Style="{DynamicResource ButtonStyle3}" Content="Exit" Margin="729,10,31,441" Click="Button_Exit" FontFamily="Georgia" FontSize="16" Width="50"/>
         <Label Content="All materials" HorizontalAlignment="Left" Margin="266,49,0,0" VerticalAlignment="Top" Width="154" FontSize="18" Height="30" FontFamily="Georgia" FontStyle="Italic" RenderTransformOrigin="0.997,0.401" FontWeight="Bold"/>
-        <Label Content="All comments" HorizontalAlignment="Left" Margin="274,265,0,0" VerticalAlignment="Top" Width="138" FontSize="18" Height="26" FontFamily="Georgia" FontStyle="Italic" FontWeight="Bold"/>
+        <Label Content="All comments" HorizontalAlignment="Left" Margin="274,265,0,0" VerticalAlignment="Top" Width="140" FontSize="18" Height="31" FontFamily="Georgia" FontStyle="Italic" FontWeight="Bold"/>
         <Button Style="{DynamicResource ButtonStyle1}" Content="Delete materials" HorizontalAlignment="Left" Margin="67,198,0,0" VerticalAlignment="Top" Height="26" Width="123" Click="Button_DeleteMaterial" FontFamily="Georgia" FontSize="15"/>
         <Button Style="{DynamicResource ButtonStyle2}" Content="Delete comment" HorizontalAlignment="Left" Margin="664,261,0,0" VerticalAlignment="Top" Height="26" Width="126" RenderTransformOrigin="0.784,2.309" Click="Button_DeleteComment" FontFamily="Georgia" FontSize="15"/>
         <Image Margin="679,10,81,426" Source="/door_1f6aa.png" Stretch="Fill" Width="50"/>
         <Image Margin="0,-44,703,381" Source="/324560f56c1717668f1a72653fef8744.png" Stretch="Fill"/>
         <Image Margin="617,239,146,181" Source="/eeefe884fc9d66d79f17b30f9b57fc23__1_-removebg-preview.png" Stretch="Fill" Height="70" Width="47" RenderTransformOrigin="0.766,0.6"/>
         <Image Margin="15,176,748,244" Source="/eeefe884fc9d66d79f17b30f9b57fc23__1_-removebg-preview.png" Stretch="Fill" Height="70" Width="47" RenderTransformOrigin="0.766,0.6"/>
-        <Image Margin="15,229,730,151" Source="/booksyellow.png" Stretch="Fill" Height="110" Width="65"/>
+        <Image Margin="15,224,730,156" Source="/booksyellow.png" Stretch="Fill" Height="110" Width="65"/>
     </Grid>
 </Window>

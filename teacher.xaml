@@ -277,24 +277,24 @@
             <ColumnDefinition Width="722*"/>
             <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
-        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="searchField" HorizontalAlignment="Left" Height="27" Margin="17,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580" FontFamily="Arial Narrow" FontSize="16" TextChanged="TextBox_SearchTeacher"/>
-        <Button Style="{DynamicResource ButtonStyle1}" Content="SEARCH!" HorizontalAlignment="Left" Height="34" Margin="646,97,0,0" VerticalAlignment="Top" Width="138" FontFamily="Georgia" FontSize="16" Click="Button_Search" Grid.ColumnSpan="2" FontStretch="Expanded" FontWeight="Heavy"/>
-        <Button Style="{DynamicResource ButtonStyle2}" Content="Exit" HorizontalAlignment="Left" Height="60" Margin="12,352,0,0" VerticalAlignment="Top" Width="90" FontFamily="Georgia" FontSize="20" Click="Button_Exit" Foreground="Black" Background="#FFC5C5C5"/>
-        <Button Style="{DynamicResource ButtonStyle3}" Content="To materials" HorizontalAlignment="Left" Height="58" Margin="587,348,0,0" VerticalAlignment="Top" Width="134" FontFamily="Georgia" FontSize="18" Click="Button_ToMaterials" FontStretch="Medium" FontWeight="Heavy"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="searchField" HorizontalAlignment="Left" Height="26" Margin="12,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580" FontFamily="Arial Narrow" FontSize="16" TextChanged="TextBox_SearchTeacher"/>
+        <Button Style="{DynamicResource ButtonStyle1}" Content="SEARCH!" HorizontalAlignment="Left" Height="34" Margin="633,100,0,0" VerticalAlignment="Top" Width="138" FontFamily="Georgia" FontSize="16" Click="Button_Search" Grid.ColumnSpan="2" FontStretch="Expanded" FontWeight="Heavy"/>
+        <Button Style="{DynamicResource ButtonStyle2}" Content="Exit" HorizontalAlignment="Left" Height="50" Margin="13,358,0,0" VerticalAlignment="Top" Width="90" FontFamily="Georgia" FontSize="20" Click="Button_Exit" Foreground="Black" Background="#FFC5C5C5"/>
+        <Button Style="{DynamicResource ButtonStyle3}" Content="To materials" HorizontalAlignment="Left" Height="58" Margin="602,355,0,0" VerticalAlignment="Top" Width="125" FontFamily="Georgia" FontSize="18" Click="Button_ToMaterials" FontStretch="Medium" FontWeight="Heavy" Grid.ColumnSpan="2"/>
         <Label Content="You have entered as a teacher" Margin="86,23,309,377" FontFamily="Georgia" FontSize="20" FontWeight="Bold" FontStyle="Italic" Height="35" Width="325"/>
-        <Label Content="Language" Margin="266,188,365,217" RenderTransformOrigin="-1.084,4.598" FontSize="18" FontFamily="Georgia" Height="30" Width="90"/>
+        <Label Content="Language" Margin="266,188,365,199" RenderTransformOrigin="-1.084,4.598" FontSize="18" FontFamily="Georgia" Width="90"/>
         <Label Content="Year" Margin="13,188,643,217" FontFamily="Georgia" FontSize="18" Width="65" Height="30"/>
-        <Label Content="Course" Margin="553,182,88,223" Height="30" FontFamily="Georgia" FontSize="18" RenderTransformOrigin="-7.187,4.135" Width="80"/>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Reset " Margin="281,368,290,37" FontFamily="Georgia" FontSize="16" Click="Button_ResetFilters" Height="30" Width="150"/>
+        <Label Content="Course" Margin="553,188,88,217" Height="30" FontFamily="Georgia" FontSize="18" RenderTransformOrigin="-7.187,4.135" Width="80"/>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Reset " Margin="307,368,290,37" FontFamily="Georgia" FontSize="16" Click="Button_ResetFilters" Height="30"/>
         <Image Margin="21,11,640,365" Source="/1f469-200d-1f3eb.png" Stretch="Fill" Height="60" IsHitTestVisible="False" RenderTransformOrigin="1.085,0.617" Width="60"/>
         <DataGrid x:Name="teacherDataGrid" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="4" Height="1" AutoGenerateColumns="True"/>
         <ComboBox x:Name="languageComboBox" Margin="361,188,210,217" SelectionChanged="ComboBox_Language" Width="150" Height="30" RenderTransformOrigin="0.625,-1.508"/>
         <ComboBox x:Name="yearComboBox" Margin="73,188,498,217" SelectionChanged="ComboBox_Year" Height="30" Width="150"/>
         <ComboBox x:Name="courseComboBox" Margin="633,187,17,218" SelectionChanged="ComboBox_Course" FontSize="14" FontFamily="Georgia" Width="150" Height="30" RenderTransformOrigin="1.02,0.485" Grid.ColumnSpan="2"/>
         <Label Content="Search for materials" HorizontalAlignment="Left" Margin="212,70,0,0" VerticalAlignment="Top" Width="200" Height="25" FontFamily="Georgia" FontSize="16"/>
-        <Image Margin="102,352,559,23" Source="/door_1f6aa.png" Stretch="Fill" Width="60" Height="60"/>
-        <Image Grid.ColumnSpan="2" Margin="709,314,16,-5" Source="/booksyellow.png" Stretch="Fill" Width="75" Height="125"/>
+        <Image Margin="95,352,566,23" Source="/door_1f6aa.png" Stretch="Fill" Width="60" Height="60"/>
+        <Image Grid.ColumnSpan="2" Margin="715,320,10,-9" Source="/booksyellow.png" Stretch="Fill" Width="75" Height="125"/>
         <Image Margin="431,347,240,18" Source="/eeefe884fc9d66d79f17b30f9b57fc23__1_-removebg-preview.png" Stretch="Fill" Height="70" Width="50"/>
-        <Image Margin="602,93,65,288" Source="/1f50d.png" Stretch="Fill" FlowDirection="RightToLeft"/>
+        <Image Margin="587,97,80,284" Source="/1f50d.png" Stretch="Fill" FlowDirection="RightToLeft"/>
     </Grid>
 </Window>

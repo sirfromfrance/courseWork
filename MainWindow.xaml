@@ -152,16 +152,16 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid Width="800" Height="435">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Label Content="Distant materials" HorizontalAlignment="Left" Height="47" Margin="214,100,0,0" VerticalAlignment="Top" Width="398" FontFamily="Georgia" FontSize="25" FontWeight="Bold" FontStyle="Italic"/>
-        <Label Content="Username" HorizontalAlignment="Left" Height="27" Margin="99,171,0,0" VerticalAlignment="Top" Width="81" FontFamily="Georgia" FontSize="16"/>
-        <Label Content="Password" HorizontalAlignment="Left" Height="27" Margin="99,213,0,0" VerticalAlignment="Top" Width="81" FontFamily="Georgia" FontSize="16"/>
-        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="usernameTextBox" HorizontalAlignment="Left" Height="27" Margin="214,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" TextChanged="UserName_textbox" FontFamily="Georgia" FontSize="14"/>
+        <Label Content="Username" HorizontalAlignment="Left" Height="28" Margin="99,172,0,0" VerticalAlignment="Top" Width="81" FontFamily="Georgia" FontSize="16"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="27" Margin="99,221,0,0" VerticalAlignment="Top" Width="81" FontFamily="Georgia" FontSize="16"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="usernameTextBox" HorizontalAlignment="Left" Height="30" Margin="214,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" TextChanged="UserName_textbox" FontFamily="Georgia" FontSize="14"/>
         <Button Style="{DynamicResource ButtonStyle1}" Content="Login" HorizontalAlignment="Left" Height="41" Margin="300,333,0,0" VerticalAlignment="Top" Width="100" Background="#FFF4D8F3" FontFamily="Georgia" FontSize="14" Click="Login_btn"/>
-        <PasswordBox Style="{DynamicResource PasswordBoxStyle1}" x:Name="passwordBox" HorizontalAlignment="Left" Height="27" Margin="214,217,0,0" VerticalAlignment="Top" Width="199" Password="" FontFamily="Georgia" FontSize="14"/>
+        <PasswordBox Style="{DynamicResource PasswordBoxStyle1}" x:Name="passwordBox" HorizontalAlignment="Left" Height="31" Margin="214,217,0,0" VerticalAlignment="Top" Width="199" Password="" FontFamily="Georgia" FontSize="14"/>
 
         <DataGrid x:Name="userDataGrid" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Center" Width="4" AutoGenerateColumns="True" Height="4" RenderTransformOrigin="0.5,0.5" >
             <DataGrid.RenderTransform>
@@ -173,7 +173,7 @@
                 </TransformGroup>
             </DataGrid.RenderTransform>
         </DataGrid>
-        <Image x:Name="books" Grid.Row="0" Margin="537,124,103,150" Source="books_1f4da.png" Stretch="Fill"/>
+        <Image x:Name="books" Grid.Row="0" Margin="499,123,141,150" Source="books_1f4da.png" Stretch="Fill" Height="160" Width="160"/>
 
 
     </Grid>

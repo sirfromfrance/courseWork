@@ -314,16 +314,16 @@
                 <BindingGroup/>
             </Label.BindingGroup>
         </Label>
-        <Button Style="{DynamicResource ButtonStyle1}" Content="Add" Margin="25,340,660,60" Width="115" Height="35" Click="Button_addMaterial" FontFamily="Georgia" FontSize="16"/>
-        <Button Style="{DynamicResource ButtonStyle3}" Content="Edit" Margin="638,338,47,61" Height="35" Width="115" Click="Button_EditMaterial" FontFamily="Georgia" FontSize="16"/>
-        <Button Style="{DynamicResource ButtonStyle2}" Content="Delete" Margin="342,340,342,60" Width="115" Height="35" Click="Button_deleteMaterial" FontFamily="Georgia" FontSize="16"/>
+        <Button Style="{DynamicResource ButtonStyle1}" Content="Add" Margin="17,358,668,42" Width="115" Height="35" Click="Button_addMaterial" FontFamily="Georgia" FontSize="16"/>
+        <Button Style="{DynamicResource ButtonStyle3}" Content="Edit" Margin="638,358,47,42" Width="115" Click="Button_EditMaterial" FontFamily="Georgia" FontSize="16" Height="35"/>
+        <Button Style="{DynamicResource ButtonStyle2}" Content="Delete" Margin="342,358,342,42" Width="115" Height="35" Click="Button_deleteMaterial" FontFamily="Georgia" FontSize="16"/>
         <Button Style="{DynamicResource ButtonStyle4}" Content="Exit" Margin="624,-8,63,372" Click="Button_Exit" FontFamily="Georgia" FontSize="16"/>
-        <DataGrid Style="{DynamicResource DataGridStyle1}" x:Name="TeachermaterialGrid" HorizontalAlignment="Center" Margin="0,82,0,0" VerticalAlignment="Top" Height="211" AutoGenerateColumns="True" Width="750" SelectionChanged="TeachermaterialGrid_SelectionChanged"/>
+        <DataGrid Style="{DynamicResource DataGridStyle1}" x:Name="TeachermaterialGrid" HorizontalAlignment="Center" Margin="0,93,0,0" AutoGenerateColumns="True" SelectionChanged="TeachermaterialGrid_SelectionChanged" Width="800" VerticalAlignment="Top" Height="230" HorizontalContentAlignment="Center"/>
         <Image Margin="728,10,12,365" Source="/door_1f6aa.png" Stretch="Fill" Height="60" Width="60"/>
-        <Image Margin="449,318,296,37" Source="/eeefe884fc9d66d79f17b30f9b57fc23__1_-removebg-preview.png" Stretch="Fill" Height="80" Width="55"/>
-        <Image Margin="593,335,167,60" Source="/pencil_270f.png" Stretch="Fill" Height="40" Width="40"/>
-        <Image Margin="131,306,609,29" Source="/63bd0626976933353b32db507c89bc95-removebg-preview.png" Stretch="Fill" Height="100" Width="60"/>
-        <Image Margin="10,-51,668,290" Source="/booksyellow.png" Stretch="Fill"/>
+        <Image Margin="449,336,296,19" Source="/eeefe884fc9d66d79f17b30f9b57fc23__1_-removebg-preview.png" Stretch="Fill" Height="80" Width="55"/>
+        <Image Margin="598,353,162,42" Source="/pencil_270f.png" Stretch="Fill" Height="40" Width="40"/>
+        <Image Margin="122,323,618,12" Source="/63bd0626976933353b32db507c89bc95-removebg-preview.png" Stretch="Fill" Height="100" Width="60"/>
+        <Image Margin="10,-41,692,314" Source="/booksyellow.png" Stretch="Fill" Width="98" Height="162"/>
 
     </Grid>
 </Window>
